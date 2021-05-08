@@ -7,11 +7,14 @@
             <div class="column is-one-half is-centered has-nice-link">
               <div itemscope itemtype="http://schema.org/Person">
                 <img id="profile-pic" src="~/assets/me-mom-oval.png" width="250" height="160" itemprop="image">
-                <div v-if="getWidth() > 600" style="height:5em; width:auto;">
-                  <h1 class="title title--kukuri" itemprop="name">Daniel Schorin</h1>
-                </div>
-                <div v-else>
-                  <img src="~/assets/me-mom.png" width="auto" height="auto" itemprop="image">
+                <div style="height:5em; width:auto;"> 
+                  <span v-if="getWidth() > 800">
+                    {{ getwidth }}
+                    <h1 class="title title--kukuri" itemprop="name">Daniel Schorin</h1>
+                  </span>
+                  <span v-else>
+                    <img id="profile-pic" src="~/assets/title-mobile.png" width="500" height="300" itemprop="image">
+                  </span>
                 </div>
                 <div>
                   <no-ssr>

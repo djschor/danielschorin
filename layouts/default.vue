@@ -11,10 +11,11 @@
                     <img
                         src="~assets/logo-dual.png"
                         alt="peak"
-                        width="110"
+                        width="150"
+                        height="10"
                         class="is-pad-left"
-                        
-                    >
+                >
+
                   <div class="navbar-burger burger" aria-label="menu" data-target="navMenu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
