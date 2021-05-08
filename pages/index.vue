@@ -9,7 +9,6 @@
                 <img id="profile-pic" src="~/assets/me-mom-oval.png" width="250" height="160" itemprop="image">
                 <div style="height:5em; width:auto;"> 
                   <span v-if="getWidth() > 800">
-                    {{ getwidth }}
                     <h1 class="title title--kukuri" itemprop="name">Daniel Schorin</h1>
                   </span>
                   <span v-else>
