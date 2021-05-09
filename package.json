@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@babel/core": "^7.14.0",
+    "@egjs/vue-flicking": "^3.7.2",
     "@nuxt/content": "^1.14.0",
     "ant-design-vue": "^1.7.4",
     "antd": "^4.15.4",
     "core-js": "^3.9.1",
+    "mobile-device-detect": "^0.4.3",
     "nuxt": "^2.15.3",
     "nuxt-buefy": "^0.4.4",
     "nuxt-ssr-screen-size": "^1.0.0",

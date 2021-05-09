@@ -25,8 +25,20 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~plugins/vue-js-modal.js',
-    '~plugins/vue-clipboard.js'
-  ],
+    '~plugins/vue-clipboard.js',
+    '~/plugins/vue-flicking.js'],
+    // '~/plugins/vue-mobile.js'],
+
+  build: {
+    loaders: {
+      vue: {
+        compilerOptions: {
+          // This option is highly recommended
+          preserveWhitespace: false
+        }
+      }
+    }
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

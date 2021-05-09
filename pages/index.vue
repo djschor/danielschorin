@@ -11,6 +11,9 @@
                   <span v-if="getWidth() > 800">
                     <h1 class="title title--kukuri" itemprop="name">Daniel Schorin</h1>
                   </span>
+                  <span v-else-if="isMobile">
+                    <img id="profile-pic" src="~/assets/title-mobile.png" width="500" height="300" itemprop="image">
+                  </span>
                   <span v-else>
                     <img id="profile-pic" src="~/assets/title-mobile.png" width="500" height="300" itemprop="image">
                   </span>
@@ -133,7 +136,7 @@ import Shows from '~/components/interests/Shows'
 import Books from '~/components/interests/Books'
 import Other from '~/components/interests/Other'
 import NuxtSSRScreenSize from 'nuxt-ssr-screen-size'
-
+import { isMobile } from 'mobile-device-detect';
 import { Icon } from 'ant-design-vue'
 const MyIcon = Icon.createFromIconfontCN({
   scriptUrl: '//at.alicdn.com/t/font_2530486_df52i00yn3s.js', 
@@ -159,6 +162,7 @@ export default {
   data() {
     return {
       isImageModalActive: false,
+      mob: isMobile ? 'Welcome to Your Vue.js mobile App!' : 'Welcome to Your Vue.js App'
     }
   },
   mixins: [NuxtSSRScreenSize.NuxtSSRScreenSizeMixin],

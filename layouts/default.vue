@@ -10,10 +10,10 @@
                 <div class="navbar-brand">
                     <img
                         src="~assets/logo-dual.png"
-                        alt="peak"
+                        alt="ds"
                         width="150"
                         height="10"
-                        class="is-pad-left"
+                        class="is-pad-left image is-96x96"
                 >
 
                   <div class="navbar-burger burger" aria-label="menu" data-target="navMenu" aria-expanded="false">
