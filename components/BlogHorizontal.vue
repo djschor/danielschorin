@@ -51,7 +51,6 @@
           </div>
           <span v-if="hover">
             <div class="back is-background-container">
-        
             <div class="media-right is-higher">
               <a class="twitter-share-button" href="https://twitter.com/intent/tweet?url=http://localhost:54083/writing/canwelearnfromai" target="_blank">
                 <svg class="icon" aria-hidden="true">
@@ -80,14 +79,14 @@ export default {
   },
   head: {
     script: [
-      { src: 'vanta/three.min.js' },
-      { src: 'vanta/vanta.fog.min.js' },
+      { src: '/vanta/three.min.js' },
+      { src: '/vanta/vanta.fog.min.js' },
     ]
   },
   async mounted() {
     if (process.browser) {
       window.THREE = THREE;
-      const { default: FOG } = await import("@/static/vanta/vanta.fog.min.js");
+      const { default: FOG } = import("@/static/vanta/vanta.fog.min.js");
       VANTA.FOG({
         el: '.back',
         touchControls: true,

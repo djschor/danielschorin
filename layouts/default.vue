@@ -90,17 +90,7 @@ export default {
           isActive: false
       }
   },
-  methods: {
-    isMobile() {
-      if (process.browser) {
-        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-          return true
-        } else {
-          return false
-        }
-      }
-    }
-  },
+
   computed: { 
 
   }

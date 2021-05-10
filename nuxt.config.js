@@ -27,6 +27,7 @@ export default {
     '~plugins/vue-js-modal.js',
     '~plugins/vue-clipboard.js',
     '~/plugins/vue-flicking.js'],
+    // '~/plugins/vue-vanta.js'],
     // '~/plugins/vue-mobile.js'],
 
   build: {

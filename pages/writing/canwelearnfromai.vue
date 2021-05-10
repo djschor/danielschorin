@@ -5,8 +5,8 @@
           <div class="container is-one-half">
             <div id="background" class="is-background-container"/>
             <section class="hero is-one-half" >
-              <div  class="hero-body">
-                <vanta/>
+              <div class="hero-body">
+                <!-- <v-vanta type="module" effect="dots" :options=options></v-vanta> -->
 
                 <div class="container" style="margin-top:12%">
                   <h1 class="title is-1 ">
@@ -56,25 +56,45 @@
 </template>
 
 <script>
-import * as THREE from "three";
+import * as THREE from "three"
+import DOTS from 'vanta/dist/vanta.dots.min'
 import PinkButton from '~/components/PinkButton'
+// import VVanta from 'vue-vanta'
 
 export default {
-  head: {
-    script: [
-      { src: 'vanta/three.min.js' },
-      { src: 'vanta/vanta.dots.min.js' },
-    ]
-  },
   components: {
-    PinkButton
+    PinkButton  },
+  data () {
+      return {
+        options: {
+            // mouseControls: true,
+            // touchControls: true,
+            // minHeight: 250.00,
+            // minWidth: 200.00,
+            // scale: 1.00,
+            // scaleMobile: 1.00
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 300.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xfaf6eb,
+            color2: 0x6978,
+            backgroundColor: 0xade1ff,
+            size: 6.10,
+            spacing: 16.00,
+            THREE: THREE
+        }
+      }
   },
   async mounted() {
-    // window is only avaiable on browser
     if (process.browser) {
+      this.vantaEffect = 
       window.THREE = THREE;
-      const { default: DOTS } = await import("@/static/vanta/vanta.dots.min.js");
-      VANTA.DOTS({
+      const { default: DOTS } = await import("@/static/vanta/vanta.dots.min");
+      DOTS({
         el: '#background',
         mouseControls: true,
         touchControls: true,
@@ -88,19 +108,10 @@ export default {
         backgroundColor: 0xade1ff,
         size: 6.10,
         spacing: 16.00
-      })
+      });
     }
   }
 }
-// export default {
-//   components: {
-//     Vanta
-//   },
-//   data () {
-//     return {
-//     }
-//   }
-// }
 </script>
 
 <style lang="scss">
