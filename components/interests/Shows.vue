@@ -4,13 +4,13 @@
       <div class="column is-mobile">
         <div class="carotainer is-interest-container cont-float is-mobile">
           <figure class="image is-160x160" style="z-index:1;">
-            <img src="~/assets/interests/onepiece.png">
+            <img src="~/assets/interests/oa.png">
           </figure>
           <div class="is-text-interest-position" style="z-index:2;">
-            <a class="text_interest" style="color:#4977eb;-webkit-text-stroke: 1px #ffc973;">one piece</a> 
+            <a class="text_interest" style="color:#4977eb;-webkit-text-stroke: 1px #ffc973;">The OA</a> 
           </div>
           <div class="multi-button">
-            <svg  class="icon funbutton" aria-hidden="true">
+            <svg onclick="location='https://www.youtube.com/watch?v=DvHJtez2IlY'" class="icon funbutton" aria-hidden="true">
                 <use xlink:href="#icon-youtube1"></use>
               </svg>
               <!-- <svg onclick="location='https://www.netflix.com/title/80107103'" class="icon funbutton" aria-hidden="true">
@@ -23,14 +23,14 @@
         </div>
         <div class="carotainer is-interest-container cont-float">
           <figure class="image is-160x160" style="z-index:1;">
-            <img src="~/assets/interests/dark.png">
+            <img src="~/assets/interests/neon.png">
           </figure>
           <div class="is-text-interest-position" style="z-index:1;">
-            <a class="text_interest" style="color:#ffc973;-webkit-text-stroke: 1px #ffbb4f;">dark</a> 
+            <a class="text_interest" style="color:#ffc973;-webkit-text-stroke: 1px #ffbb4f;">Neon Genesis Evangelion</a> 
           </div>
           <div class="multi-button">
-              <svg onclick="location='https://www.netflix.com/title/80100172'" class="icon funbutton" aria-hidden="true">
-                <use xlink:href="#icon-netflix"></use>
+              <svg onclick="location='https://www.youtube.com/watch?v=2o_9GjAs-sc'" class="icon funbutton" aria-hidden="true">
+                <use xlink:href="#icon-youtube1"></use>
               </svg>
               <!-- <svg onclick="location='https://www.youtube.com/watch?v=9jJ8TVpUIk0', '_blank'" class="icon funbutton" aria-hidden="true">
                 <use xlink:href="#icon-youtube1"></use>
@@ -46,7 +46,7 @@
           </div>
           <div class="multi-button">
               <svg onclick="https://www.netflix.com/title/70184207', '_blank'" class="icon funbutton" aria-hidden="true">
-                <use xlink:href="#icon-netflix"></use>
+                <use xlink:href="#icon-youtube1"></use>
               </svg>
               <!-- <a> -->
               <!-- <svg onclick="location='https://www.youtube.com/watch?v=OsGR31e0kjw'" class="icon funbutton" aria-hidden="true">
